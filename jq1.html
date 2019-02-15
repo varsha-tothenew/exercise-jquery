@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment jQuery </title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<style>
+.load {
+  font-size: 150%;
+  color: red;
+}
+</style>
+</head>
+<body>
+<h1>JQuery Assigment </h1>
+	<div >
+		<p>1.Console "Hello Word" in document.ready function</p>
+	</div>
+	<button type="button" onclick="btn1()"> click and open console</button>
+
+	<div >
+		<p id="test">2.Select a ID name "#test" and add class "load" when DOM is loaded</p>
+	</div>
+	<button onclick="btn2()"> click</button>
+
+	<div >
+		<p class="myclassnew">3.Change the color of element which class name end with "-new"</p>
+	</div>
+	<button onclick="btn3()"> click</button>
+
+	<div >
+		<p>4.Disable submit button using jquery attr method</p>
+	</div>
+	<button type=submit id="submitButtonId"onclick="btn4()"> Submit</button>
+
+	<div id="main">
+		<p class="target">5.Change the font size of ".target" which has parent element with id name "#main"</p>
+	</div>
+	<button onclick="btn5()"> click</button>
+
+	<div class="change">
+		6.After page load change the HTML of div element with "p" element
+	</div>
+	<button onclick="btn6()"> click</button>
+
+	<div>
+		<p>7.Bind a click function to an "click" element and append next "click" next to it.</p>
+	</div>
+	<button onclick="btn7()" id="btn7"> click</button>
+
+	<div>
+		<p id="message">8.Click event not working on element which added dynamicly or via script, make it work using .on method</p>
+	</div>
+	<button onclick="btn8()"> click</button>
+
+	<div id="div9">
+		<p>9.Get dropdown selected value on onchanage event and append in div container</p>
+		<select id="select9">
+			  <option>Volvo</option>
+			  <option>Saab</option>
+			  <option selected="selected">Mercedes</option>
+			  <option>Audi</option>
+
+		</select>
+	</div>
+
+	<div style="display:inline-block;">
+		<p>10.Create a dropdown menu using hover method in jquery</p>
+		<ul id="select10" style="list-style-type: none; display:inline-block;">Menu
+			<div class="menuDiv" style="display: none;">
+			  <li class="select" ><a href="#">Volvo</a></li>
+			  <li class="select"><a href="#">Saab</a></li>
+			  <li class="select"><a href="#">Mercedes</a></li>
+			  <li class="select"><a href="#">Audi</a></li>
+			</div>
+		</ul>
+	</div>
+
+	<div>
+		<p>11.On clicking on "google" tag. It is taking us to google home page. Stop it from happening.</p>
+		<a id="openlink11" href="https://www.google.com">Google</a> 
+	</div>
+	<!-- <button onclick="btn11() "> click</button> -->
+
+	<div id="parent">
+		<p>12.We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li</p>
+		<ul>
+			<li id="child">This is child 1 click here</li>
+			<li id="child">This is child 2 click here</li>
+			<li id="child">This is child 3 click here</li>
+		</ul>
+	</div>	
+
+	<div>
+		<p>13.Get the max height of elements using jquery each method</p>
+	</div>
+	<div id="head" style="height: 110px">
+		This is head div.<br />Height: 10px
+	</div>
+	<div id="content" style="height: 140px">
+		This is content div.<br />Height: 140px
+	</div>
+	<div id="menu" style="height: 150px">
+		This is menu div.<br />Height: 150px
+	</div>
+	<div id="foot" style="height: 110px">
+		This is foot div.<br />Height: 110px
+	</div>
+	<button id="btn13"> click</button>
+
+	<div>
+		<p>14.Chagne color of every cell which has number larger than 10</p>
+	</div>
+	<table border="1px">
+	<tr>
+		<td>15</td>
+		<td>8</td>
+		<td>1</td>
+		<td>11</td>	
+	</tr>
+	<tr>
+		<td>15</td>
+		<td>8</td>
+		<td>1</td>
+		<td>7</td>	
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>8</td>
+		<td>99</td>
+		<td>2</td>	
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>81</td>
+		<td>1</td>
+		<td>3</td>	
+	</tr>
+	</table>
+	<button id="btn14"> click</button>
+
+	<div>
+		<p>15.Retrive the data from server using ajax get call</p>
+	</div>
+	<button onclick="btn15()"> click</button>
+
+	<div>
+		<p>16.Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom</p>
+	</div>
+		<table border="1">
+			<tr id="row1">
+				<td>abc</td>
+				<td>
+					<input type="button" class="btn16" value="X" id="1">
+				</td>
+			</tr>
+			<tr id="row2">
+				<td>def</td>
+				<td>
+					<input type="button"  class="btn16" value="X" id="2">
+				</td>
+			</tr>
+		</table>
+	<div>
+		<p>17.Create a image array and in div create a slide show to animate images of delay of 500ms.</p>
+	</div>
+	<div id="slider" style="background-size: auto;
+	width: 300px;
+	height:300px;"></div>
+	
+<script type="text/javascript" src="jq1.js"></script>
+</body>
+</html>
