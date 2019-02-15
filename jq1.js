@@ -120,10 +120,10 @@ $(document).ready(function()
 //js for ques 13
 $("#btn13").click(function()
 {
-    $(document).ready(function(){
+
     var large = null;
     var hi = 0;
-    $("div").each(function(){
+    $(".div13").each(function(){
       var h = $(this).height();
       if(h > hi){
          hi = h;
@@ -131,7 +131,7 @@ $("#btn13").click(function()
       }
     });
     large.css("background-color", "lightgrey");
-    });
+
 });
 
 //js for ques 14
@@ -151,14 +151,12 @@ $("#btn14").click(function()
 });
 
 //js for ques 15
-$(document).ready(function()
-{
-  $("btn15").click(function(){
+  $("#btn15").click(function(){
     $.ajax({url: "https://jsonplaceholder.typicode.com/todos/1", success: function(result){
       $("#div1").html(JSON.stringify(result));
     }});
   });
-});
+
 
 //js for ques 16
 $(document).ready(function () 
